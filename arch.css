@@ -1,0 +1,60 @@
+*,*::before,*:after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    background: 	#FA8072;
+}
+.search-form{
+    max-width: 400px;
+    margin: 50px auto;
+
+}
+input{
+    width: 100%;
+    padding: 20px;
+}
+input.search{
+    border-radius: 20px;
+    border: 10px solid crimson;
+    font-size: 1rem;
+    z-index: 2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+.suggestions{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.suggestions li{
+    background: white;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    transition: background 0.2s;
+    border-radius: 20px;
+
+}
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+  }
+  
+  .suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+  }
+
+
+
+  span.population {
+    font-size: 15px;
+  }
+  
+  .hl {
+    background: #ffc600;
+  }
